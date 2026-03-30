@@ -46,7 +46,7 @@ It allows users to manage products, add items to cart, place orders, and view re
 5. Create a database:
 
    ```
-   pos_db
+   db_pos
    ```
 6. Import `database.sql` file
 7. Update DB config in:
