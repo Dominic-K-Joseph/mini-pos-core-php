@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mini POS</title>
+    <link rel="icon" type="image/png" href="assets/images/POS-Icon.png">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+    <h2>Mini POS</h2>
+    <button class="view-btn" onclick="window.location.href='orders.html'">
+        View Orders
+    </button>
+</div>
+
+<div class="pos-container">
+
+    <!-- LEFT -->
+    <div class="left">
+        <h2>Products</h2>
+        <div id="products-list" class="product-grid"></div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right">
+        <h2>Cart</h2>
+        <h3>Total: ₹<span id="total">0</span></h3>
+
+        <div id="cart-items"></div>
+
+        <button class="order-btn" onclick="placeOrder()">Place Order</button>
+    </div>
+
+</div>
+
+<script src="assets/app.js"></script>
+
+</body>
+</html>

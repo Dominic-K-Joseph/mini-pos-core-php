@@ -1,0 +1,107 @@
+#  Mini POS System (PHP + MySQL + Axios)
+
+## Overview
+
+This is a Mini Point of Sale (POS) system built using **Core PHP, MySQL, HTML, CSS, and JavaScript (Axios)**.
+It allows users to manage products, add items to cart, place orders, and view recent orders.
+
+---
+
+## Features
+
+* Product listing with stock display
+* Add to cart (no page reload)
+* Increase / decrease quantity
+* Remove items from cart
+* Real-time total calculation
+* Order placement using Axios (AJAX)
+* Stock validation before order
+* Database transaction handling
+* Orders page with auto-refresh
+
+---
+
+## Tech Stack
+
+* PHP (8.x)
+* MySQL
+* JavaScript (ES6)
+* Axios
+* HTML & CSS
+
+## Setup Instructions
+
+1. Install XAMPP (or any PHP server)
+2. Start **Apache** and **MySQL**
+3. Copy project folder to:
+
+   ```
+   C:\xampp\htdocs\pos-system
+   ```
+4. Open phpMyAdmin:
+
+   ```
+   http://localhost/phpmyadmin
+   ```
+5. Create a database:
+
+   ```
+   pos_db
+   ```
+6. Import `database.sql` file
+7. Update DB config in:
+
+   ```
+   config/db.php
+   ```
+
+---
+
+## How to Run the Project
+
+1. Open browser and go to:
+
+   http://localhost/pos-system/index.html
+
+2. You will see:
+
+   * Product list
+   * Cart section
+
+3. Test flow:
+
+   * Click **Add** product
+   * Increase/decrease quantity
+   * Click **Place Order**
+
+4. View orders:
+
+   * Click **View Orders**
+   * Or open:
+
+     http://localhost/pos-system/orders.html
+
+
+##  Security & Best Practices
+
+* Used PDO with prepared statements
+* Implemented backend validation
+* Used database transactions
+* Prevented invalid quantities
+* Handled stock validation
+
+---
+
+##  Improvements (Future Scope)
+
+* User authentication
+* Order status (pending/completed)
+* Invoice generation (PDF)
+* Stock audit logs
+* Real-time updates using WebSockets
+
+---
+
+## Author
+
+Developed as part of PHP Developer Assessment.
